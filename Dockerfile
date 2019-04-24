@@ -15,7 +15,3 @@ RUN bundle install
 # Upload source
 COPY . $APP_HOME
 
-# Start server
-ENV PORT 4567
-EXPOSE 4567
-CMD ["ruby", "webhook_server.rb"]
